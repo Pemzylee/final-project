@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<title>Calulator</title>
+<link rel="stylesheet" href="cal.css">
+</head>
+<body class="body-container">
+	<div class="container">
+		
+		<button class="action">
+			click me
+		</button>
+		
+		<form>
+			<input class="inp" id="screen" autocomplete="off" placeholder="0" autofocus name="name" type="text">
+		</form>
+
+		<div class="btns">
+			<div class="row">
+				<button class="clear">CE</button>
+				<button class="fact">x!</button>
+				<button class="button">(</button>
+				<button class="button">)</button>
+				<button class="button">%</button>
+				<button class="ac">AC</button>
+			</div>
+
+			<div class="row">
+				<button class="sin">sin</button>
+				<button class="pi">π</button>
+				<button class="button">7</button>
+				<button class="button">8</button>
+				<button class="button">9</button>
+				<button class="button">÷</button>
+			</div>
+
+			<div class="row">
+				<button class="cos">cos</button>
+				<button class="log">log</button>
+				<button class="button">4</button>
+				<button class="button">5</button>
+				<button class="button">6</button>
+				<button class="button">x</button>
+			</div>
+			
+			<div class="row">
+				<button class="tan">tan</button>
+				<button class="sqrt">√</button>
+				<button class="button">1</button>
+				<button class="button">2</button>
+				<button class="button">3</button>
+				<button class="button">-</button>
+			</div>
+
+			<div class="row">
+				<button class="e">e</button>
+				<button class="pow">x <span class="xy">y</span> </button>
+				<button class="button">0</button>
+				<button class="button">.</button>
+				<button class="button">+</button>
+				<button onclick="screen.value=eval(screen.value)">=</button>
+			</div>
+	    </div>
+    </div>
+
+	<div class="container-fluid">
+			<div class="search-engine">
+				<div class="header">
+					<p>History</p>
+					<p class="settings">Settings</p>
+				</div>
+	
+				<button class="closeMenu">click me</button>
+	
+				<div id="chat" class="chatAI">
+					<div id="chat-output"></div>
+					<form id="wolfram-form" action="https://www.wolframalpha.com/input?i=" method="get" target="_blank">
+						<input id="chat-input" class="input" name="i" placeholder="Type here" />
+					</form>
+				</div>
+			</div>
+    </div>
+
+	<script src="cal.js"></script>
+</body>
+</html>
